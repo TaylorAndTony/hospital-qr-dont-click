@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二维码警告</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- big title -->
+        <div id="big-title">不要扫码！</div>
+        <!-- first box -->
+        <div id="detail" class="neu">
+            <div class="center">近日，有 QQ 群消息称部分人</div>
+            <div class="center">将<strong>疫情重点地区医院</strong>的签到二维码 P 到了涩图上</div>
+            <div class="center">导致看涩图的人健康码出现问题。</div>
+            <div class="center">尽管不确定消息是否属实</div>
+            <div class="center">但对于<strong>不明来源的二维码</strong></div>
+            <div class="center">建议使用离线工具查看其原始字符串信息</div>
+            <div class="center">确认无误后再扫码</div>
+        </div>
+        <div id="img-box">
+            <img class="neu-img" src="qq.png" style="width: 60%;">
+        </div>
+        <div id="not-sure">我也不知道是不是真的</div>
+        <div id="empty"> </div>
+    </div>
+
+    <style>
+        :root {
+            --bg: #e4ebf8;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+            background: var(--bg);
+        }
+
+        #main {
+            max-width: 1000px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #big-title {
+            text-align: center;
+            font-size: 48px;
+            padding: 40px;
+            font-weight: bold;
+        }
+
+        .neu {
+            /* center */
+            width: 70%;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            /* neu style */
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px #c2c8d3,
+                -5px -5px 10px #ffffff;
+            padding: 2em;
+            /* margin */
+            margin-bottom: 60px;
+        }
+
+        .neu-img {
+            /* center */
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            /* neu style */
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px #c2c8d3,
+                -5px -5px 10px #ffffff;
+            padding: 10px;
+        }
+
+        #not-sure {
+            text-align: right;
+            position: relative;
+            right: 20%;
+            top: 20px;
+            color: grey;
+        }
+
+        .center {
+            font-size: 20px;
+            line-height: 2em;
+        }
+
+        #empty {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>
